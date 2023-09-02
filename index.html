@@ -6,16 +6,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Prework Study Guide</title>
-    <style>
-      ul {
-      width: 800px;
-      }
-      li {
-      padding-left: 1.28571429em;
-      text-indent: -1.28571429em;
-      }
-    </style>
   </head>
 
   <body>
@@ -35,18 +27,18 @@
           <li>HTML is made up of elements which work together to provide content and basic framework for all pages on the web.</li>
           <li>An HTML element is a type of content on a webpage.</li>
           <li>Commonly used element types to add content to pages are:</li>
-            <ol>
+            <ul>
               <li>text elements</li>  
               <li>image elements</li>
               <li>header elements</li>
               <li>list elements</li>
-            </ol>
+            </ul>
           <li>Common HTML element types used to divide and describe a page are:</li>
-            <ol>
+            <ul>
               <li>Meta-related elements</li>
               <li>content division elements</li>
               <li>semantic elements</li>
-            </ol>
+            </ul>
           <li>HTML elements are usually composed of an opening tag and a closing tag represented with angle brackets.</li>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represent the visible content shown to the user.</li>
@@ -57,22 +49,22 @@
           <li>Inside the HTML is an attribute tag which tells the browser the language for the webpage.</li>
           <li>HTML attributes are always defined in the beginning element, never the closing element.</li>
           <li>Inside the head element we have:</li>
-            <ol>
+            <ul>
               <li>metadata tags</li>       
               <li>title</li>
               <li>styles</li>
               <li>base</li>
               <li>links</li>
               <li>meta</li>
-            </ol>
+            </ul>
           <li>The HTML elements which provide information about an HTML document and website that is used by the browser so that the page renders correctly are:</li>
-            <ol>
+            <ul>
               <li>!Doctype html</li>
               <li>html</li>
               <li>head</li>
               <li>meta</li>
               <li>title</li>
-            </ol>
+            </ul>
           <li>Meta and title elements are nested inside the head element.</li>
           <li>Elements nested inside other elements are called child elements.</li>
           <li>The parent element holds the children elements.</li>
@@ -86,27 +78,80 @@
           <li>The <strong>href</strong> attribute points to the URL for the link.</li>
           <li>It is important to use heading tags in order from h1 to h6 to make the page accessible to users who access the page using screen readers or other devices.</li>
           <li>The footer element appears at the bottom of the page and usualy contains the following:</li>
-            <ol>
+            <ul>
               <li>author</li>
               <li>copyright</li>
               <li>content</li>
               <li>sitemap</li>
               <li>navigation</li>
-            </ol>
-          <li>Section elements are semantic elements that define a section in a document that contains thematic content. 
-            They help us elegantly organize the content on our page based on topics we may have.</li>
+            </ul>
+          <li>Section elements are semantic elements that define a section in a document that contains thematic content. They help us elegantly organize the content on 
+            our page based on topics we may have.</li>
         </ul>
       </section>
     
       <section class="card" id="css-section">
         <h2>Cascading Style Sheets (CSS)</h2>
         <ul>
-          <li></li>
-
+          <li>Cascading Style Sheets (CSS) is a programming language used by developers to define how webpage content is presented to users.</li>
+          <li>CSS defines style rules for specific elements of an HTML page and format them using wide range of style options.</li>
+          <li>There are three ways to style a webpage using CSS: 
+            <ul>
+              <li>inline CSS</li>
+              <li>internal CSS style sheet</li>
+              <li>external CSS style sheet</li>
+            </ul>
+          <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only.  They are useful
+             for quick and permanent changes but are less flexible than external and internal style sheets, because each inline style must be edited individually 
+             whenever you make a design change.</li>
+          <li>The internal style sheet contains CSS rules for the webpage in the head section of the HTML file by embedding an entire stylesheet directly
+             in the HTML file using a style element in the head element. The rules only apply to that page, and you can configure CSS classes and IDs, 
+             which are used to identify elements, to style multiple elements in the page code.</li>
+          <li>The external CSS style sheet is preferred in most cases because it allows developers to keep all their CSS rules in a separate file, which makes design changes
+             easier. When using an external style sheet, we link the file using a <strong>link</strong> element placed in the HTML's head element.</li>
+          <li>a selector (such as div) defines the element or attributes to which the rules (also ruleset), or declarations, will apply. This is the HTML 
+            element name at the start of the ruleset.</li>
+          <li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
+          <li>A declaration is a single rule (like color: red;). It specifies which of the element's properties you want to style. It contains two important components: 
+            the CSS property we want to apply (such as color) and the value of the property (such as red).</li>
+          <li>Properties are ways in which you can style an HTML element, (such as adding color to text in a paragraph).</li>
+          <li>Property value are added to the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. 
+            (For example, there are many color values in addition to red.)</li>
+          <li>Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
+          <li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+          <li>Some popular properties are:</li>
+            <ul> 
+              <li>margin is much space we want around the outside of an element</li>
+              <li>padding is how much space we want around the content inside an element</li>
+              <li>border refers to the solid line that is just outside the padding</li>
+              <li>width (of an element)</li>
+              <li>background-color behind an element's content and padding</li>
+              <li>color an element's content (usually text)</li>
+              <li>text-shadow sets a drop shadow on the text inside an element</li>
+              <li>display sets the display mode of an element.</li>
+            </ul>
+          <li>When you set two values on a property like margin or padding, the first value affects the element's top and bottom side; the second value affects the left 
+            and right side.</li>  
+          <li>Auto is a CSS value that has a number of uses. It's the default value for a lot of box-model properties like width, height, margin, and background-size.
+             It's also the default value for position properties like top and bottom , left and right and z-index .</li>
+          <li>it is important to know that every HTML element is essentially a box. Each box consists of margins outside the element, and the element's borders, padding, 
+            and content. This is sometimes referred to as the CSS box model.</li>
+          <li>An asterisk (*) is used as a special wild card symbol when we want to apply a rule to <strong>all</strong> the elements visible on the page.</li>
+          <li>We can combine two selectors or more into a single CSS rule with a comma, allowing the declarations to affect all <thead></thead> selectors. Rather than repeating a rule which 
+            would add more lines of code and repetition, two or more elements that will share the same styling can be grouped together.</li>
+          <li>The positioning property, text-align is one way to center a title or heading on a webpage.</li>
+          <li>The <strong>img</strong> selector assigns property values to any image element in the markup. The <strong>display</strong> property is assigned with the 
+            <strong>block</strong> value, which assigns each image to start on a new line.</li>
+          <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector. Then the class 
+            attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule.</li>
+          <li>Assigning colors in CSS can be done in many ways, including by semantic references such as gray or blue. We can also refer to a color by its hexadecimal code, 
+            or hex #.</li>
+          <li>Adding comments to your CSS will help any future developer work with your CSS file, but will also help you when you come back to the project after a break.  
+            To comment in CSS, simply place your plain text inside /*  */ marks.</li>      
         </ul>
       </section>
     
-        <section class="card" id="git-section">
+      <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
           <li>Git is a version control system that lets you manage and keep track of each version of your project.</li>
@@ -116,79 +161,79 @@
           <li>GitHub is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.</li>
           <li>We use GitHub to store our code and easily collaborate with others.</li>
           <li>Git comands for <strong>SETUP</strong>: Configuring user information used across all local repositories:</li>
-            <ol>
-              <li><strong>git config --global user.name "[firstname lastname]"</strong> (set a name that is identifiable for credit when review verion history.)</li>
-              <li><strong>git config --global user.email "[valid-email]"</strong> (set an email address that will be associated with each history marker.)</li>
-              <li><strong>git config --global color.ui auto</strong> (set automatic command line coloring for Git for easy reviewing.)</li>
-            </ol>
+            <ul>
+              <li><strong>git config --global user.name "[firstname lastname]"</strong> (set a name that is identifiable for credit when review verion history)</li>
+              <li><strong>git config --global user.email "[valid-email]"</strong> (set an email address that will be associated with each history marker)</li>
+              <li><strong>git config --global color.ui auto</strong> (set automatic command line coloring for Git for easy reviewing)</li>
+            </ul>
           <li>Git commands for <strong>SETUP & INIT</strong>: Configuring user information, initialiazing and cloning repositories:</li>
-            <ol>
-              <li><strong>git init</strong> (initialize an existing directory as a Git repository.)</li>
-              <li><strong>git clone [url]</strong> (retrieve an entire repository from a hosted location via URL.)</li>
-            </ol>
+            <ul>
+              <li><strong>git init</strong> (initialize an existing directory as a Git repository)</li>
+              <li><strong>git clone [url]</strong> (retrieve an entire repository from a hosted location via URL)</li>
+            </ul>
           <li>Git commands for <strong>STAGE & SNAPSHOT</strong>: Working with snapshots and the Git staging area:</li>
-            <ol>
-              <li><strong>git status</strong> (checks what branch we are currently on. Show modified files working directory, staged for your next commit.)</li>
-              <li><strong>git add [file]</strong> (add a file as it looks now to your next commit or stage.)</li>
-              <li><strong>git reset [file]</strong> (unstage a file while retaining the changes in working directory.)</li>
-              <li><strong>git diff</strong> (diff of what is changed but not staged.)</li>
-              <li><strong>git diff --staged</strong> (diff of what is staged but not yet committed.)</li>
-              <li><strong>git commit -m "[descriptive message]"</strong> (commit your staged content as a new commit snapshot.)</li>
-            </ol>
+            <ul>
+              <li><strong>git status</strong> (checks what branch we are currently on. Show modified files working directory, staged for your next commit)</li>
+              <li><strong>git add [file]</strong> (add a file as it looks now to your next commit or stage)</li>
+              <li><strong>git reset [file]</strong> (unstage a file while retaining the changes in working directory)</li>
+              <li><strong>git diff</strong> (diff of what is changed but not staged)</li>
+              <li><strong>git diff --staged</strong> (diff of what is staged but not yet committed)</li>
+              <li><strong>git commit -m "[descriptive message]"</strong> (commit your staged content as a new commit snapshot)</li>
+            </ul>
           <li>Git commands for <strong>BRANCH & MERGE</strong>: Isolating work in branches, changing context, and integrating changes.</li>
-            <ol>
-              <li><strong>git branch</strong> (list your branches.a *will appear next to the currently active branch.)</li>
-              <li><strong>git branch [branch-name]</strong> (create a new branch at the current commit.)</li>
-              <li><strong>git checkout</strong> (switch to another branch and check it out into your working directory.)</li>
-              <li><strong>git checkout -b branch-name</strong> (creates a new branch and switches to it.)</li>
-              <li><strong>git merge [branch]</strong> (merge the specified branch's history into the current one.)</li>
-              <li><strong>git log</strong> (show all commits in the current branch's history.)</li>
-            </ol>
+            <ul>
+              <li><strong>git branch</strong> (list your branches.a *will appear next to the currently active branch)</li>
+              <li><strong>git branch [branch-name]</strong> (create a new branch at the current commit)</li>
+              <li><strong>git checkout</strong> (switch to another branch and check it out into your working directory)</li>
+              <li><strong>git checkout -b branch-name</strong> (creates a new branch and switches to it)</li>
+              <li><strong>git merge [branch]</strong> (merge the specified branch's history into the current one)</li>
+              <li><strong>git log</strong> (show all commits in the current branch's history)</li>
+            </ul>
           <li>Git commands for <strong>INSPECT & COMPARE</strong>: Examining logs, diffs and object information:</li>
-            <ol>
-              <li><strong>git log</strong> (show the commit history for the currently active branch.)</li>
-              <li><strong>git log branchB..branchA</strong> (show the commits on branchA that are not on branchB.)</li>
-              <li><strong>git log --follow [file]</strong> (show the commits that changed file, even across renames.)</li>
-              <li><strong>git diff branchB...branchA</strong> (show the diff of what is in branchA that is not in branchB.)</li>
-              <li><strong>git show [SHA]</strong> (show any object in Git human-readable format.)</li>
-            </ol>
+            <ul>
+              <li><strong>git log</strong> (show the commit history for the currently active branch)</li>
+              <li><strong>git log branchB..branchA</strong> (show the commits on branchA that are not on branchB)</li>
+              <li><strong>git log --follow [file]</strong> (show the commits that changed file, even across renames)</li>
+              <li><strong>git diff branchB...branchA</strong> (show the diff of what is in branchA that is not in branchB)</li>
+              <li><strong>git show [SHA]</strong> (show any object in Git human-readable format)</li>
+            </ul>
           <li>Git commands for <strong>TRACKING PATH CHANGES</strong>: Versioning file removes and path changes:</li>
-            <ol>
-              <li><strong>git rm [file]</strong> (delete the file from project and stage the removal for commit.)</li>
-              <li><strong>git mv [existing-path] [new-path]</strong> (change an existing file path and stage the move.)</li>
-              <li><strong>git log --stat -M</strong> (show all commit logs with indication of any paths that moved.)</li>
-            </ol>
+            <ul>
+              <li><strong>git rm [file]</strong> (delete the file from project and stage the removal for commit)</li>
+              <li><strong>git mv [existing-path] [new-path]</strong> (change an existing file path and stage the move)</li>
+              <li><strong>git log --stat -M</strong> (show all commit logs with indication of any paths that moved)</li>
+            </ul>
           <li>Git commands for <strong>IGNORING PATTERNS</strong>: Preventing unintentional staging or commiting of files:</li>
-            <ol>
+            <ul>
               <li><strong>logs/</strong><br></li>
                   <strong>*.notes</strong><br>
-                  <strong>pattern*/</strong>  (save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.)
-              <li><strong>git config --global core.excludesfile [file]</strong> (system wide ignore pattern for all local repositories.)</li>
-            </ol>
+                  <strong>pattern*/</strong>  (save a file with desired patterns as .gitignore with either direct string matches or wildcard globs)
+              <li><strong>git config --global core.excludesfile [file]</strong> (system wide ignore pattern for all local repositories)</li>
+            </ul>
           <li>Git commands for <strong>SHARE & UPDATE</strong>: Retrieving updates from another repository and updating local repos:</li>
-            <ol>
-              <li><strong>git remote add [alias] [url]</strong> (add a git URL as an alias.)</li>
-              <li><strong>git fetch [alias]</strong> (fetch down all the branches from that Git remote.)</li>
-              <li><strong>git merge [alias]/[branch]</strong> (merge a remote branch into your current branch to bring it up to date.)</li>
-              <li><strong>git push [alias] [branch]</strong> (transmit local branch commits to the remote repository branch.)</li>
-              <li><strong>git pull</strong> (fetch and merge any commits from the tracking remote branch.)</li>
-            </ol>
+            <ul>
+              <li><strong>git remote add [alias] [url]</strong> (add a git URL as an alias)</li>
+              <li><strong>git fetch [alias]</strong> (fetch down all the branches from that Git remote)</li>
+              <li><strong>git merge [alias]/[branch]</strong> (merge a remote branch into your current branch to bring it up to date)</li>
+              <li><strong>git push [alias] [branch]</strong> (transmit local branch commits to the remote repository branch)</li>
+              <li><strong>git pull</strong> (fetch and merge any commits from the tracking remote branch)</li>
+            </ul>
           <li>Git commands for <strong>REWRITE HISTORY</strong>: Rewriting branches, updating commits and clearing hstory:</li>
-            <ol>
-              <li><strong>git rebase [branch]</strong> (apply any commits of current branch ahead of specified one.)</li>
-              <li><strong>git reset --hard [commit]</strong> (clear staging area, rewrite working tree from specified commit.)</li>
-            </ol>
+            <ul>
+              <li><strong>git rebase [branch]</strong> (apply any commits of current branch ahead of specified one)</li>
+              <li><strong>git reset --hard [commit]</strong> (clear staging area, rewrite working tree from specified commit)</li>
+            </ul>
           <li>Git commands for <strong>TEMPORARY COMMITS</strong>: Temporarily store modified, tracked files in order to change branches:</li>
-            <ol>
-              <li><strong>git stash</strong> (save modified and staged changes.)</li>
-              <li><strong>git stash list</strong> (list stack-order of stashed file changes.)</li>
-              <li><strong>git stash pop</strong> (write working from top of stash stack.)</li>
-              <li><strong>git stash drop</strong> (discard the changes from top of stash stack.)</li>
-            </ol>
+            <ul>
+              <li><strong>git stash</strong> (save modified and staged changes)</li>
+              <li><strong>git stash list</strong> (list stack-order of stashed file changes)</li>
+              <li><strong>git stash pop</strong> (write working from top of stash stack)</li>
+              <li><strong>git stash drop</strong> (discard the changes from top of stash stack)</li>
+            </ul>
           <li>GitHub Terminology:</li>
             <ul>
-              <li>Git - a tool that allows developers and others to use version control</li>
-              <li>GitHub - one of many web interfaces for using Git</li>
+              <li>Git - a tool that allows developers and others to use version control.</li>
+              <li>GitHub - one of many web interfaces for using Git.</li>
               <li>Organization (org) - a grouping mechanism allowing teams to collaborate across many projects at once.</li>
               <li>Repository (repo) - a folder in which all files and their version histories are stored.</li>
               <li>Branch - a version of the repo that allows work without affecting other branches. Repos may have many branches for 
@@ -214,33 +259,28 @@
                 internally discuss the details of the commits.</li>
               <li><strong>Step 5</strong> - After waiting for the Federalist build to complete, team members can preview the change on a test version of the website 
                 and request reviewers to approve or comment on the change. Once the reviewers approve the pull request, the commits merge into the main branch and are 
-                published on the live site.</li>
-
-             </ul>   
-
-
-
-
+                published on the live site.</li>             
             </ul>
         </ul>
+      
       </section>
 
       <section class="card" id="javascript-section">
       <h2>Javascript</h2>
+      
         <ul>
           <li></li>
-
         </ul>
-    </section>
+
+      
+      </section>
 
     </main>
 
-
-
-
-
     <footer>
+    
       <p>I can code!</p>
+    
     </footer>
 
   </body>
